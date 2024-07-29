@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Import Styles -->
+  <link rel="stylesheet" href="./content/css/basic.css" />
+  <!-- Import Vue.js -->
+  <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+
+<body>
+  <div id="app">
+    <!-- <div class="nav-bar"></div> -->
+
+    <service-overview></service-overview>
+
+    <projects-overview></projects-overview>
+
+    <section class="p-5">
+      <div class="container mx-auto">
+        <div class="columns-2">
+          <div class="col-item">
+
+          </div>
+          <div class="col-item">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <outro></outro>
+
+  </div>
+  <footer>
+    <p class="copyright-text">© Copyright 2024 </p>
+  </footer>
+
+  <!-- Import Js -->
+<script src="./js/main.js"></script>
+
+<!-- Import Components -->
+<script src="./components/Outro.js"></script>
+<script src="./components/Service.js"></script>
+<script src="./components/ServiceOverview.js"></script>
+<script src="./components/Projects.js"></script>
+<script src="./components/ProjectsOverview.js"></script>
+
+<!-- Mount App -->
+<script>
+  const mountedApp = app.mount('#app')
+</script>
+
+</body>
+
+</html>
