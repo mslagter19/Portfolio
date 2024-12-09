@@ -18,36 +18,78 @@
     }
   </style>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <!--Swiper.js-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div id="app">
     <!-- <div class="nav-bar"></div> -->
 
-    <service-overview></service-overview>
-
-    <projects-overview></projects-overview>
-
-    <section class="p-5">
-      <div class="container mx-auto">
-        <div class="columns-2">
-          <div class="col-item">
-
+    <section class="hero section h-screen bg-black text-white" style="background-image: url(/content/images/header.jpg);">
+      <div class="container relative z-10 sm:max-w-lg md:max-w-xl lg:max-w-3xl xl:max-w-6xl mx-auto h-full">
+        <div class="flex items-end h-full">
+          <div class="w-2/4 p-5">
+            <h1 class="text-5xl">Een Front-end developer met gevoel voor design en gebruiksvriendelijkheid.</h1>
           </div>
-          <div class="col-item">
-
+          <div class="w-2/4 p-5 flex justify-end">
+            <a href="/" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded shadow-lg hover:bg-blue-600 hover:shadow-xl">Bekijk portfolio</a>
           </div>
         </div>
       </div>
     </section>
 
+    <intro></intro>
 
+    <service-overview></service-overview>
+
+    <projects-overview></projects-overview>
+
+    <faq></faq>
 
     <outro></outro>
 
   </div>
-  <footer>
-    <p class="copyright-text">© Copyright 2024 </p>
+  <footer class="bg-black text-white section">
+    <div class="container sm:max-w-lg md:max-w-xl lg:max-w-3xl xl:max-w-6xl mx-auto">
+      <div class="grid grid-cols-4 gap-4">
+        <div>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex">
+            <li></li>
+          </ul>
+        </div>
+        <div></div>
+        <div>
+          <h3>Wil je op de hoogte blijven?</h3>
+          <p>Schrijf je in voor de nieuwsbrief!</p>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- Import Js -->
@@ -55,8 +97,11 @@
 
 <!-- Import Components -->
 <script src="./components/Outro.js"></script>
+<script src="./components/Intro.js"></script>
 <script src="./components/Service.js"></script>
 <script src="./components/ServiceOverview.js"></script>
+<script src="./components/FAQ.js"></script>
+<script src="./components/FAQ-item.js"></script>
 <script src="./components/Projects.js"></script>
 <script src="./components/ProjectsOverview.js"></script>
 

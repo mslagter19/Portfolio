@@ -1,8 +1,8 @@
 app.component('service-overview', {
     template:
     /*html*/
-    `<section class="p-5 h-screen flex items-center">
-    <div class="container mx-auto">
+    `<section class="flex items-center">
+    <div class="container sm:max-w-lg md:max-w-xl lg:max-w-3xl xl:max-w-6xl mx-auto">
       <div class="grid grid-cols-4 grid-rows-2 gap-8">
         <div class="col-span-2 border-b-2 p-5">
           <div class="p-5">
